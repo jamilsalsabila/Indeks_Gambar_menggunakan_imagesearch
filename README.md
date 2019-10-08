@@ -78,3 +78,5 @@ Kudeh menjelaskan, untuk meng-indeks gambar baru, perlu dijalankan langkah-langk
 - Hasil pencarian
 ![jamur2](images/jamur2.png)
 
+## TERIMA KASIH TELAH MEMBACA SAMPAI HABIS
+
