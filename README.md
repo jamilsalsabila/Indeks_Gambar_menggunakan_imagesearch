@@ -36,7 +36,7 @@ _File_ yang paling mencolok adalah ***Dockerfile*** dan ***requirements.txt***
 - ***Dockerfile*** mengindikasikan bahwa anda harus meng-_install_ ***Docker*** ke dalam komputer terlebih dahulu. Untuk lebih jelas bagaimana prosedur instalasi ***Docker***, dapat dibaca pada tautan [ini](https://docs.docker.com/install/#supported-platforms).
 - ***requirements.txt***. Isi _file_ ini adalah modul/pustaka yang mesti di _download_/_install_ terlebih dahulu sebelum menjalankan program ini. Ada 2 cara:
     - Menggunakan pip: ```sudo apt install python-pip```
-    - Menggunakan aplikasi [Anaconda](https://www.anaconda.com/), dengan cara membuat sebuah _environment_ baru, sehingga nantinya versi pustaka/modul yang akan di-_download_ tidak mengalami konflik dengan versi pustaka/modul yang telah di-_download_ sebelumnya. Karena beberapa program Python hanya dapat berjalan menggunakan pustaka/modul dengan versi tertentu.
+    - Menggunakan aplikasi [Anaconda](https://www.anaconda.com/), dengan cara membuat sebuah _environment_ baru, sehingga nantinya versi pustaka/modul yang akan di-_download_ tidak mengalami **konflik** dengan versi pustaka/modul yang telah di-_download_ sebelumnya. Karena beberapa program Python hanya dapat berjalan menggunakan pustaka/modul dengan versi tertentu.
     - Penulis menggunakan cara kedua:
         - _Install_ [Anaconda](https://www.anaconda.com/distribution/)
         - Membuat _environment_ baru: ```conda create -n [nama_env] python=3.6```
