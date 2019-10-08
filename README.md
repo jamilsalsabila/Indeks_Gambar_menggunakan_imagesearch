@@ -3,13 +3,13 @@
 Developer: [Kudeh](https://github.com/kudeh)  
 Penulis: M. Salsabila Jamil
 
-**Image Search Engine** dibuat menggunakan bahasa **[Python](https://www.python.org/)**.
-Karenanya harus _install_ Python dulu jika belum ada.
+**Image Search Engine** adalah sebuah aplikasi yang digunakan untuk mencari gambar yang "mirip-mirip" di dasarkan pada warna. Aplikasi ini dibuat menggunakan bahasa **[Python](https://www.python.org/)**.
+Karenanya harus _install_ Python dulu jika belum punya.
 
 Tujuan aplikasi:
 - Diberikan sebuah gambar, maka akan ditampakkan gambar lainnya yang memiliki kesamaan warna
 
-Teknik yang digunakan untuk menentukan gambar yang memiliki kesamaan warna adalah _chi squared distance_ atau pengukuran jarak menggunakan _chi squared_. Jarak yang diukur pada kasus ini adalah jarak antar _histogram_ warna. [[ref 1](https://en.wikipedia.org/wiki/Content-based_image_retrieval)] [[ref 2](https://stats.stackexchange.com/questions/184101/comparing-two-histograms-using-chi-square-distance)]
+Teknik yang digunakan untuk menentukan gambar yang memiliki kesamaan - pada aplikasi ini - warna adalah _chi squared distance_ atau pengukuran jarak menggunakan _chi squared_. Jarak yang diukur pada aplikasi ini adalah jarak antar _histogram_ warna dari 2 gambar berbeda/sama. [[ref 1](https://en.wikipedia.org/wiki/Content-based_image_retrieval)] [[ref 2](https://stats.stackexchange.com/questions/184101/comparing-two-histograms-using-chi-square-distance)]
 
 Penulis menjalankan aplikasi ini pada _Operating System_ Ubuntu 16.04 LTS 64bit
 [Download Ubuntu](https://ubuntu.com/download/desktop)
