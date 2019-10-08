@@ -56,3 +56,14 @@ Langkah ketiga, jalankan perintah ```sudo docker run -p 80:8000 imagesearch```. 
 - Hasil pencarian
 ![hasil](images/langkah_6.png)
 Dapat anda lihat tampilan hasil pencarian di urutkan berdasarkan kemiripan warna, dimulai dari _score_ terkecil hingga terbesar. Semakin kecil _score_, semakin dekat jaraknya, yang artinya semakin mirip gambarnya dinilai dari jarak histogram warna.
+
+## Eksperimen Menggunakan Gambar Jamur
+Kudeh menjelaskan, untuk meng-indeks gambar baru, perlu dijalankan langkah-langkah di bawah ini:
+- Masukkan gambar baru ke dalam folder ```app/static/images```
+![new_image](images/gambar_baru.png)
+- ```cd app``` *Jika belum berada di folder 'app'
+- ```pip install -r requirements.txt```
+![install_module](images/install_reqs.png)
+- Jalankan perintah: ```python index.py --dataset static/images --index index2.csv```
+
+
