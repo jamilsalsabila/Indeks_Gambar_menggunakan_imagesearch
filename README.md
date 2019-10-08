@@ -14,7 +14,7 @@ Teknik yang digunakan untuk menentukan gambar yang memiliki kesamaan warna adala
 Penulis menjalankan aplikasi ini pada _Operating System_ Ubuntu 16.04 LTS 64bit
 [Download Ubuntu](https://ubuntu.com/download/desktop)
 
-Langkah pertama, yaitu men-_download_ berkas [[image-search-engine]](https://github.com/kudeh/image-search-engine) [[MIT License]](https://github.com/kudeh/image-search-engine/blob/master/LICENSE). Ada 2 cara:
+Langkah pertama, yaitu men-_download_ berkas [image-search-engine](https://github.com/kudeh/image-search-engine) [[MIT License]](https://github.com/kudeh/image-search-engine/blob/master/LICENSE). Ada 2 cara:
 - Melalui terminal: ```git clone https://github.com/kudeh/image-search-engine```
 ![clone](images/langkah_1.png)
 - Download manual
