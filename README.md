@@ -46,36 +46,36 @@ Terdapat 2 cara dalam menjalankan aplikasi ini:
         - Membuat _environment_ baru: ```conda create -n [nama_env] python=3.6```
         - Masuk ke _env_ yang baru dibuat: ```conda activate [nama_env]```
         - _Install_ pustaka/modul yang ditulis di dalam file **requirements.txt**: ```pip install -r requirements.txt``` atau
-        ```conda install --file requirements.txt``` (*_not working_ pada projek ini, karena di penulisannya menyesuaikan pedoman **pip**)
+        ```conda install --file requirements.txt``` (*_not working_ pada projek ini, karena di penulisannya menyesuaikan pedoman **pip**)  
         ![reqs](images/install_reqs.png)
-- Setelah _Docker_ sukses ter-_install_, langkah selanjutnya ialah membangun (_build_) ***Dockerfile*** dengan menjalankan perintah ```sudo docker build --tag=imagesearch .```, parameter ```--tag=[nama]``` bisa nama apa saja, tidak mesti ```imagesearch```. Tanda titik (.) artinya "_current working directory_" (direktori yang anda saat ini sedang berada), **WAJIB** ada file **Dockerfile**, **Procfile**. Perintah ini akan menjalankan semua perintah yang ada di dalam _file_ ***Dockerfile***
+- Setelah _Docker_ sukses ter-_install_, langkah selanjutnya ialah membangun (_build_) ***Dockerfile*** dengan menjalankan perintah ```sudo docker build --tag=imagesearch .```, parameter ```--tag=[nama]``` bisa nama apa saja, tidak mesti ```imagesearch```. Tanda titik (.) artinya "_current working directory_" (direktori yang anda saat ini sedang berada), **WAJIB** ada file **Dockerfile**, **Procfile**. Perintah ini akan menjalankan semua perintah yang ada di dalam _file_ ***Dockerfile***  
 ![Build Dockerfile](images/langkah_2.png)
 
-Langkah ketiga, jalankan perintah ```sudo docker run -p 80:8000 imagesearch```. Maksud perintah ini adalah "jalankan **imagesearch** pada _port_ 80:8000 dengan alamat _localhost_, dimana _port_ 80 adalah _port_ yang akan diakses melalui _host machine_, localhost:80, sedangkan untuk menyambungnya ke _virtual machine_ **imagesearch** ialah menggunakan _port_ 8000 yang telah di-_set_ sebelumnya".
+Langkah ketiga, jalankan perintah ```sudo docker run -p 80:8000 imagesearch```. Maksud perintah ini adalah "jalankan **imagesearch** pada _port_ 80:8000 dengan alamat _localhost_, dimana _port_ 80 adalah _port_ yang akan diakses melalui _host machine_, localhost:80, sedangkan untuk menyambungnya ke _virtual machine_ **imagesearch** ialah menggunakan _port_ 8000 yang telah di-_set_ sebelumnya".  
 ![run](images/langkah_3.png)
-- Berikut adalah tampilan halaman depan dari aplikasi ini
+- Berikut adalah tampilan halaman depan dari aplikasi ini  
 ![index](images/langkah_4.png)
-- Untuk melakukan pencarian, tekan tombol **Select & Search**
+- Untuk melakukan pencarian, tekan tombol **Select & Search**  
 ![search](images/langkah_5.png)
-- Hasil pencarian
+- Hasil pencarian  
 ![hasil](images/langkah_6.png)
 Dapat anda lihat tampilan hasil pencarian di urutkan berdasarkan kemiripan warna, dimulai dari _score_ terkecil hingga terbesar. Semakin kecil _score_, semakin dekat jaraknya, yang artinya semakin mirip gambarnya dinilai dari jarak histogram warna.
 
 ### Cara Kedua: Eksperimen Menggunakan Gambar Jamur
 Kudeh menjelaskan, untuk meng-indeks gambar baru, perlu dijalankan langkah-langkah di bawah ini:
-- Masukkan gambar baru ke dalam folder ```app/static/images```
+- Masukkan gambar baru ke dalam folder ```app/static/images```  
 ![new_image](images/gambar_baru.png)
 - ```cd app``` *Jika belum berada di folder 'app'
-- ```pip install -r requirements.txt```
+- ```pip install -r requirements.txt```  
 ![install_module](images/install_reqs_1.png)
 - Jalankan perintah: ```python index.py --dataset static/images --index index.csv```, untuk meng-indeks gambar baru
-- Selanjutnya, jalankan aplikasi dengan mengetik perintah: ```python app.py```, *applikasi ini dibuat dengan memanfaatkan modul Flask. Flask adalah _web framework_ yang dibuat untuk bahasa pemrograman Python, seperti Express.js untuk Javascript dan gin-gonic untuk Golang.
+- Selanjutnya, jalankan aplikasi dengan mengetik perintah: ```python app.py```, *applikasi ini dibuat dengan memanfaatkan modul Flask. Flask adalah _web framework_ yang dibuat untuk bahasa pemrograman Python, seperti Express.js untuk Javascript dan gin-gonic untuk Golang.  
 ![run](images/run_2.png)
-- Buka browser, ketikkan alamat: ```http://0.0.0.0:5000/```, maka akan tampil di layar monitor anda halaman seperti di bawah ini
+- Buka browser, ketikkan alamat: ```http://0.0.0.0:5000/```, maka akan tampil di layar monitor anda halaman seperti di bawah ini  
 ![index_2](images/index_2.png)
-- Jika ingin mencari, klik tombol ***Select & Search***
+- Jika ingin mencari, klik tombol ***Select & Search***  
 ![jamur](images/jamur.png)
-- Hasil pencarian
+- Hasil pencarian  
 ![jamur2](images/jamur2.png)
 
 ## TERIMA KASIH TELAH MEMBACA SAMPAI HABIS
