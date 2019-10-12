@@ -58,7 +58,7 @@ Langkah ketiga, jalankan perintah ```sudo docker run -p 80:8000 imagesearch```. 
 - Untuk melakukan pencarian, tekan tombol **Select & Search**  
 ![search](images/langkah_5.png)
 - Hasil pencarian  
-![hasil](images/langkah_6.png)
+![hasil](images/langkah_6.png)  
 Dapat anda lihat tampilan hasil pencarian di urutkan berdasarkan kemiripan warna, dimulai dari _score_ terkecil hingga terbesar. Semakin kecil _score_, semakin dekat jaraknya, yang artinya semakin mirip gambarnya dinilai dari jarak histogram warna.
 
 ### Cara Kedua: Eksperimen Menggunakan Gambar Jamur
